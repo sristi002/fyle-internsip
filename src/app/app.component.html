@@ -1,0 +1,13 @@
+<div class="flex flex-col min-h-screen   dark:bg-background">
+  <app-header></app-header>
+  <app-user-search (onUserSearch)="userSearchHandler($event)"></app-user-search>
+
+
+  <div *ngIf="username !== '' && username !== null ">
+    <app-user-details [username]="username"></app-user-details>
+  </div>
+
+  <div class="mt-auto">
+    <app-footer></app-footer>
+  </div>
+</div>

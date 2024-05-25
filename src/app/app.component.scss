@@ -1,0 +1,18 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-empty {
+    display: none;
+    flex-basis: 100%;
+}
+
+.grid-col {
+    flex-basis: calc(33.333% - 16px);
+}
+
+.card-container:after {
+    content: "";
+    flex-basis: calc(33.333% - 16px);
+}
